@@ -1,0 +1,126 @@
+    body {
+        text-align: center;
+        background-color: rgb(184, 192, 184);
+    }
+
+    h1 {
+        padding: 20px;
+        background-color: rgb(163, 237, 240);
+        border: 2px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 30px;
+        margin: 30px;
+    }
+
+    main section {
+        flex: 1;
+        min-width: 280px;
+        background-color: rgb(180, 241, 241);
+
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media (max-width : 600px) {
+        nav {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+
+
+        }
+
+        main {
+            padding: 15px;
+            margin: 10px;
+            gap: 20px;
+        }
+
+        main section {
+            flex: 1 1 100%;
+            min-width: 0;
+            padding: 15px;
+
+
+        }
+
+        h1 {
+            font-size: 50px;
+            color: rgb(22, 22, 22);
+
+        }
+
+        span {
+
+            font-size: 50px;
+            color: rgb(7, 7, 7);
+        }
+
+
+    }
+
+    @media(max-width: 768px) {
+
+        h2 {
+            font-size: 48px;
+
+        }
+    }
+
+    nav a {
+        transition: color 0.5s ease;
+    }
+
+    nav a:hover {}
+
+    button {
+        background-color: rgb(247, 242, 242);
+        color: rgb(76, 22, 224);
+        padding: 12px;
+        border: none;
+        border-radius: 15px;
+        transition: background-color 0.5s ease;
+
+    }
+
+    button:hover {
+        background-color: rgb(164, 243, 118);
+
+    }
